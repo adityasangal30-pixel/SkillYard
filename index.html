@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillYard - Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-area">
+            <i class="fa-solid fa-book"></i>
+            <h2 class="logo">SkillYard</h2>
+        </div>
+        <a href="#enroll">Enroll</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Learn Skills That Pay You</h1>
+        <p>6 Courses | Real Projects | Certificate</p>
+    </div>
+
+    <div class="filters">
+        <button onclick="filterCourse('All')">All</button>
+        <button onclick="filterCourse('Development')">Development</button>
+        <button onclick="filterCourse('Data')">Data</button>
+        <button onclick="filterCourse('Design')">Design</button>
+    </div>
+
+    <div id="courseBox" class="course-box"></div>
+
+    <div class="table-box">
+        <h2>Course Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Instructor</th>
+                    <th>Fee</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <div id="enroll" class="enroll-box">
+        <form id="myForm">
+            <h2>Enroll Form</h2>
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter name">
+            <label>Email</label>
+            <input type="text" id="email" placeholder="Enter email">
+            <label>Phone</label>
+            <input type="text" id="phone" placeholder="10 digit number">
+            <label>Select Course</label>
+            <select id="courseSelect">
+                <option value="">-- Select Course --</option>
+            </select>
+            <label>Coupon Code</label>
+            <input type="text" id="coupon" placeholder="SAVE20">
+            <div id="feeBox" class="fee-box">Select a course</div>
+            <button type="submit">Enroll Now</button>
+        </form>
+        <div id="successBox" class="success-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

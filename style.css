@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: aliceblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+}
+
+.logo-area {
+    display : flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-area i {
+    font-size: 20px;
+}
+
+.logo {
+    color: black;
+}
+
+nav a {
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+
+.filters {
+    text-align: center;
+    padding: 20px;
+}
+
+.filters button {
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: black;
+    color: white;
+}
+
+.course-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 0 5%;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Photo Style - simple */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.card-content h3 {
+    font-size: 16px;
+}
+
+.card-content p {
+    font-size: 13px;
+    color: gray;
+    margin-top: 4px;
+}
+
+.card-content .price {
+    color: red;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card-content button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.table-box {
+    margin: 30px 5%;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #f1f5f9;
+}
+
+.enroll-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 20px 5%;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.fee-box {
+    margin-top: 15px;
+    padding: 10px;
+    background: #eef2ff;
+    border: 1px dashed green;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+form button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.success-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    height: fit-content;
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .enroll-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+.course-box div:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    transform: translate();
+}
